@@ -1,0 +1,15 @@
+		<div class="hero-unit">
+			<h1>Routing code</h1>
+			<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+			<pre>
+angular.module('website', []). // The module is the one used on the <code>ng-app="website"</code>
+config(function ($routeProvider) {
+ $routeProvider.
+  when('/home', {templateUrl:'partials/home.html'}).
+  when('/about', {templateUrl:'partials/about.html'}).
+  when('/test', {templateUrl:'partials/test.html'}).
+  when('/controler', {templateUrl:'partials/controler.html', controller: ControllerCntl}).
+  otherwise({redirectTo:'/home', templateUrl:'partials/home.html'});
+});
+			</pre>
+		</div>

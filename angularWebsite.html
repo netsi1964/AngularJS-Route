@@ -1,0 +1,58 @@
+<!doctype html>
+<html ng-app="website">
+  <title>angular - webapp</title>
+<head>
+	<meta charset="utf-8">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+  <script type="text/javascript" src="js/website.js"></script>
+  <!-- <link rel="Stylesheet" type="text/css" href="http://dl.dropbox.com/u/3260327/shared.css" /> -->
+  <link rel="Stylesheet" type="text/css" href="http://bootswatch.com/cyborg/bootstrap.min.css" />
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32331522-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+<body ng-controller="MainControler">
+  
+<div class="container">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container" style="width: auto;">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">AngularJs Route</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><a href="#" ng-click="setRoute('home')">Home</a></li>
+            <li><a href="" ng-click="setRoute('about')">about</a></li>
+        <li><a href="" ng-click="setRoute('routing')">routing</a></li>
+        <li><a href="" ng-click="setRoute('nowhere')">default</a></li>
+        <li><a href="" ng-click="setRoute('controller')">controller</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div>
+    </div><!-- /navbar-inner -->
+  </div>
+  <div class="row" id="container">
+  <div ng-view></div>
+  </div>
+  <footer class="row">
+    <div class="span8">v/1.0 2012-10-17 By <a href="http://twitter.com/netsi1964">netsi1964</a> &bull; <a href="http://www.netsi.dk/wordpress">My blog</a></div>
+    <div class="span4"><a href="http://angularjs.org/" target="_blank">AngularJS.org</a> &bull; <a href="http://bootswatch.com/cyborg/" target="_blank">Bootstrap theme: cyborg</a> </div>
+  </footer>
+</div>
+
+</body>
+</html>

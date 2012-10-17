@@ -1,0 +1,18 @@
+		<div class="hero-unit">
+			<h2>Routing with a <code>controller</code></h2>
+			<p>When you route a request to a template you can also specify a <code>controller</code>. <br>
+				Doing so you can add extra individual control of content on the template based pages. <br>
+				This path have a controler, which fills out the values here:
+<ul>
+	<li>params:{{params}}</li>
+	<li>loc: {{loc}}</li>
+</ul>
+				</p>
+			<pre>
+function ControllerCntl($scope, $routeParams) {
+  $scope.name = "ControllerCntl";
+  $scope.params = $routeParams;
+  $scope.loc = document.location.href;
+}
+			</pre>
+		</div>
